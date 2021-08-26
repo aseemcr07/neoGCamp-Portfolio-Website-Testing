@@ -22,18 +22,11 @@ hr {
     margin: 2rem 0rem;
 }
 
-
-.margin-md {
-    margin: 2rem;
-}
-
-
 /** container **/
 .container {
     padding-left: 1rem;
     padding-right: 1rem;
     padding-bottom: 1rem;
-    
 }
 
 .container-center {
