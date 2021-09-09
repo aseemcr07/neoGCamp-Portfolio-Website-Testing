@@ -149,3 +149,13 @@ hr {
 .fab {
     padding-top: 1rem;
 }
+
+/** Blogs **/
+.blog-subtitle {
+    color: var(--dark-grey);
+}
+
+.blog-read-more {
+    text-decoration: none;
+    color: black;
+}
