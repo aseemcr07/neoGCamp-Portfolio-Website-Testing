@@ -15,7 +15,8 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    margin: 0px;
+    margin: auto;
+    max-width: 800px;
 }
 
 hr {
