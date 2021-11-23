@@ -7,16 +7,24 @@
     --off-white: #F3F4F6;
 }
 **/
+
+/** New version with darker blue and darker orange**/
 :root {
-    --primary-color: #00CED1;
-    --dark-grey: #6B7280;
-    --off-white: #F3F4F6;
+    --primary-color: #db0000;
+    --dark-blue: #00043B;
+    --light-grey: #D1D5DB;
+}
+html{
+    height: 100%;
 }
 
 body {
     font-family: 'Inter', sans-serif;
     margin: auto;
-
+    background-color:var(--dark-blue);
+    height: 100%;
+    background-image: linear-gradient(135deg, #00032C, #00021A);
+    background-repeat: no-repeat;
 }
 
 hr {
@@ -31,7 +39,7 @@ hr {
 }
 
 .container-center {
-    max-width: 600px;
+    max-width: 700px;
     margin: auto;
 }
 
@@ -39,20 +47,8 @@ hr {
 .link {
     text-decoration: none;
     padding: 0.5rem 1rem;
-}
-
-.link-primary {
-    background-color: var(--primary-color);
-    border-radius: 0.5rem;
-    color: white;
-}
-
-.link-secondary {
     color: var(--primary-color);
-    border-radius: 0.5rem;
-    border: 1px solid var(--primary-color);
 }
-
 /** lists **/
 .list-non-bullet {
     list-style: none;
@@ -66,15 +62,14 @@ hr {
 
 /** navigation **/
 .navigation {
-    background-color: var(--primary-color);
-    color: white;
     padding: 1rem;
-    border-bottom-left-radius: 1rem;
+    background-image: linear-gradient(135deg, #00021A, #00032C);
 }
 
 .nav-text {
+    color: var(--primary-color);
     margin: auto;
-    max-width: 800px;
+    max-width: 700px;
 }
 
 .navigation .nav-brand {
@@ -87,7 +82,7 @@ hr {
 }
 
 .navigation .link {
-    color: white;
+    color: var(--primary-color);
 }
 
 .navigation .link-active {
@@ -118,7 +113,8 @@ hr {
 }
 /** sections **/
 .section {
-    padding: 2rem;
+    padding: 2rem 1rem;
+    
 }
 
 .section h2 {
@@ -133,24 +129,28 @@ hr {
 
 /** footer **/
 .footer {
-    background-color: var(--primary-color);
-    padding: 2rem 1rem;
+    padding: 1rem;
     text-align: center;
-    color: white;
     border-top-right-radius: 1rem;
     margin-top: 30px;
 }
 .footer-header {
-    font-weight: bold;
-    font-size: 1.25rem;
+    color: var(--primary-color);
 }
 .footer .link {
-    color: white;
-    padding: 0.5rem 0.5rem;
+    color: var(--primary-color);
+    padding: 0.5rem;
 }
 
 .footer ul {
     padding-inline-start: 0px;
+}
+
+.fixed-footer{  
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 .fab {
@@ -158,11 +158,18 @@ hr {
 }
 
 /** Blogs **/
-.blog-subtitle {
-    color: var(--dark-grey);
+.blog{
+    color:var(--light-grey);
 }
 
-.blog-read-more {
+.blog .heading{
+    text-align: left;
+}
+
+.blog .subtitle{
+    font-weight: bold;
+}
+a {
     text-decoration: none;
-    color: black;
+    color: var(--primary-color);
 }
