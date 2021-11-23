@@ -8,9 +8,17 @@
 }
 **/
 
-/** New version with darker blue and darker orange**/
+/** Version 2 - with darker blue and darker orange**/
+/**
 :root {
     --primary-color: #db0000;
+    --dark-blue: #00043B;
+    --light-grey: #D1D5DB;
+}
+**/
+/** Version 3 - with Sinopia**/
+:root {
+    --primary-color: #D12D00;
     --dark-blue: #00043B;
     --light-grey: #D1D5DB;
 }
@@ -20,11 +28,12 @@ html{
 
 body {
     font-family: 'Inter', sans-serif;
-    margin: auto;
+    margin: 0px;
     background-color:var(--dark-blue);
     height: 100%;
     background-image: linear-gradient(135deg, #00032C, #00021A);
     background-repeat: no-repeat;
+    overflow-x: hidden;
 }
 
 hr {
@@ -128,13 +137,18 @@ hr {
 }
 
 /** footer **/
-.footer {
-    padding: 1rem;
-    text-align: center;
-    border-top-right-radius: 1rem;
-    margin-top: 30px;
+footer{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
 }
-.footer-header {
+.footer {
+    text-align: center;
+    padding: 0.5rem;
+}
+.footer .header {
     color: var(--primary-color);
 }
 .footer .link {
@@ -144,13 +158,6 @@ hr {
 
 .footer ul {
     padding-inline-start: 0px;
-}
-
-.fixed-footer{  
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
 }
 
 .fab {
